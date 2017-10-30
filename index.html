@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>Todo List</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="navbrand">Beardlyst</div>
+        <div class="navbuttoncontainer">
+          <div class="navbutton">About</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="alertbox">
+      KEEP IN MIND: This site does not connect to a database or any other backend services, so a page refresh <strong><em>will</em></strong> remove any tasks you have added and return back to the default example tasks.
+    </div>
+    <ul>
+      <li><input type="checkbox"> Here's a task item</li>
+      <li><input type="checkbox"> Here's another task item</li>
+      <li class="completed"><input type="checkbox" checked> Here's a completed task item</li>
+      <li><input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue molestie odio sit amet tristique. Mauris mattis scelerisque nisi vel tempus. Nunc id nunc rhoncus libero mattis facilisis. Morbi at risus augue. Nam egestas elit ex, vestibulum sodales mauris rhoncus ac. Mauris pulvinar interdum felis, sit amet dictum elit tincidunt quis. Mauris ultrices libero nisl, non ultrices dolor ullamcorper non. Vestibulum viverra hendrerit porttitor. Aenean in magna sed mauris suscipit molestie. Suspendisse vel iaculis ipsum, vel faucibus turpis. Proin tempor rutrum felis a semper.</li>
+    </ul>
+    <input type="textbox" id="taskAddText" placeholder="Add a task...">
+    <button>New Task</button>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; Tim Graves 2017</p>
+  </footer>
+
+  <script type="text/javascript" src="./assets/script.js"></script>
+
+</body>
+</html>
