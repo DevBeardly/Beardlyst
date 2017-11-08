@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- My CSS -->
   <link rel="stylesheet" href="./assets/styles.css">
   <title>Todo List</title>
 </head>
@@ -24,14 +27,14 @@
     <div class="alertbox">
       KEEP IN MIND: This site does not connect to a database or any other backend services, so a page refresh <strong><em>will</em></strong> remove any tasks you have added and return back to the default example tasks.
     </div>
-    <ul>
-      <li><input type="checkbox"> Here's a task item</li>
-      <li><input type="checkbox"> Here's another task item</li>
-      <li class="completed"><input type="checkbox" checked> Here's a completed task item</li>
-      <li><input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue molestie odio sit amet tristique. Mauris mattis scelerisque nisi vel tempus. Nunc id nunc rhoncus libero mattis facilisis. Morbi at risus augue. Nam egestas elit ex, vestibulum sodales mauris rhoncus ac. Mauris pulvinar interdum felis, sit amet dictum elit tincidunt quis. Mauris ultrices libero nisl, non ultrices dolor ullamcorper non. Vestibulum viverra hendrerit porttitor. Aenean in magna sed mauris suscipit molestie. Suspendisse vel iaculis ipsum, vel faucibus turpis. Proin tempor rutrum felis a semper.</li>
+    <ul id="taskList">
+      <li class="task"><input type="checkbox" class="taskCheck"> Here's a task item<i class="fa fa-trash-o" aria-hidden="true"></i></li>
+      <li class="task"><input type="checkbox" class="taskCheck"> Here's another task item<i class="fa fa-trash-o" aria-hidden="true"></i></li>
+      <li class="task completed"><input type="checkbox" class="taskCheck" checked> Here's a completed task item<i class="fa fa-trash-o" aria-hidden="true"></i></li>
+      <li class="task"><input type="checkbox" class="taskCheck"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue molestie odio sit amet tristique. Mauris mattis scelerisque nisi vel tempus. Nunc id nunc rhoncus libero mattis facilisis. Morbi at risus augue. Nam egestas elit ex, vestibulum sodales mauris rhoncus ac. Mauris pulvinar interdum felis, sit amet dictum elit tincidunt quis. Mauris ultrices libero nisl, non ultrices dolor ullamcorper non. Vestibulum viverra hendrerit porttitor. Aenean in magna sed mauris suscipit molestie. Suspendisse vel iaculis ipsum, vel faucibus turpis. Proin tempor rutrum felis a semper.<i class="fa fa-trash-o" aria-hidden="true"></i></li>
     </ul>
-    <input type="textbox" id="taskAddText" placeholder="Add a task...">
-    <button>New Task</button>
+    <input type="textbox" id="addTaskText" placeholder="Add a task...">
+    <button id="addTaskButton">New Task</button>
   </main>
 
   <footer>

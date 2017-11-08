@@ -57,6 +57,7 @@ li {
   border-radius:3px;
   background-color:#e69800;
   padding:5px;
+  color:white;
 }
 
 footer {
@@ -71,5 +72,10 @@ footer > p {
 }
 
 .completed {
-  text-decoration: line-through;
+  text-decoration:line-through;
+  background-color:green;
+}
+
+.fa-trash-o {
+  float:right;
 }
