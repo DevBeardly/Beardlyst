@@ -33,6 +33,11 @@ nav {
   float:left;
   padding:12px;
   font-size:1.2em;
+  color:#DDD;
+}
+
+.navbutton:hover {
+  color:white;
 }
 
 main {
